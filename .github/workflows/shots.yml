@@ -56,7 +56,7 @@ jobs:
         shot-scraper multi shots.yml
     - name: Commit and push
       run: |-
-      for i in *.png; do mv $i img/${EPOCHSECONDS:12}.png; done
+        for i in *.png; do mv $i img/${EPOCHSECONDS:12}.png; done; 
         git config user.name "Automated"
         git config user.email "actions@users.noreply.github.com"
         git add -A
