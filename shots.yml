@@ -1,8 +1,8 @@
 - url: https://aeniks.github.io/wotd/
-  output: shot${EPOCHSECONDS}.png
+  output: shot4${EPOCHSECONDS}.png
   height: 800
   quality: 96
 - url: https://aeniks.github.io/
-  output: shot${EPOCHSECONDS}.png
+  output: shot2${EPOCHSECONDS}.png
   height: 800
   quality: 96
