@@ -32,6 +32,7 @@ jobs:
     - name: Install dependencies
       run: |
         pip install -r requirements.txt
+        mkdir img 2>/dev/null
     - name: Install Playwright dependencies
       run: |
         shot-scraper install
@@ -55,10 +56,11 @@ jobs:
         shot-scraper multi shots.yml
     - name: Commit and push
       run: |-
+      for i in *.png; do mv $i img/${EPOCHSECONDS:12}.png; done
         git config user.name "Automated"
         git config user.email "actions@users.noreply.github.com"
         git add -A
-        timestamp=$(date -u)
+        timestamp=$(date +%y%m%d_%H%M%S)
         git commit -m "${timestamp}" || exit 0
         git pull --rebase
         git push
