@@ -1,3 +1,7 @@
+[![Take screenshots](https://github.com/aeniks/cccc/actions/workflows/shots.yml/badge.svg)](https://github.com/aeniks/cccc/actions/workflows/shots.yml)
+
+
+
 # shot-scraper-template
 
 Quickly create a new GitHub repository that takes automated screenshots of a web page using [shot-scraper](https://github.com/simonw/shot-scraper).
