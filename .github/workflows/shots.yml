@@ -32,7 +32,6 @@ jobs:
     - name: Install dependencies
       run: |
         pip install -r requirements.txt
-        mkdir img 2>/dev/null
     - name: Install Playwright dependencies
       run: |
         shot-scraper install
